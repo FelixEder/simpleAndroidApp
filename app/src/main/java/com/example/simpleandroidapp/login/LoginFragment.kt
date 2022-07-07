@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.example.simpleandroidapp.MainActivity
 import com.example.simpleandroidapp.R
 import com.example.simpleandroidapp.databinding.FragmentLoginBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -63,7 +64,7 @@ class LoginFragment: Fragment() {
                 }
                 is LoginViewModel.ViewState.SuccessfulLogin -> {
                     Log.i("Success", "Correct login with user: ${viewState.username}")
-                    TODO("Call activity to navigate to detailsFragment")
+                    (activity as MainActivity).goToDetailsFragment(viewState.username)
                 }
             }
         }
