@@ -43,7 +43,7 @@
             app:layout_constraintBottom_toBottomOf="@id/username_title"
             android:layout_marginStart="@dimen/margin_small"
             android:inputType="text"
-            android:backgroundTint="@color/grey" />
+            style="@style/edit_text_style"/>
 
         <EditText
             android:id="@+id/password_edit_text"
@@ -55,7 +55,7 @@
             app:layout_constraintBottom_toBottomOf="@id/password_title"
             android:layout_marginStart="@dimen/margin_small"
             android:inputType="textPassword"
-            android:backgroundTint="@color/grey" />
+            style="@style/edit_text_style"/>
 
         <Button
             android:id="@+id/forgot_password_button"
