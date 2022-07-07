@@ -78,7 +78,6 @@
             app:layout_constraintTop_toBottomOf="@id/password_title"
             android:layout_marginTop="@dimen/margin_medium" />
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
