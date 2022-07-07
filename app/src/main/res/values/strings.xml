@@ -10,6 +10,8 @@
     <string name="error_no_username">It looks like you forgot to provide a username.</string>
     <string name="error_positive_action">OK</string>
     <string name="error_wrong_password">The password you provide doesn\'t match our records.</string>
+    <string name="password_hint">Psst, the password rhymes with "wasspord"</string>
+    <string name="actual_password">password</string>
 
     <!--Details strings -->
     <string name="welcome">Welcome, %s!</string>

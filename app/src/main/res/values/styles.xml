@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Text styles -->
+
+    <style name="primary_text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="grey_text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="light_blue_text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/light_blue</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="white_button_grey_text">
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="white_button_blue_text">
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/light_blue</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="edit_text_style">
+        <item name="backgroundTint">@color/grey</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>
