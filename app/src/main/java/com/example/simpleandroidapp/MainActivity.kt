@@ -8,8 +8,13 @@ import androidx.fragment.app.replace
 import com.example.simpleandroidapp.features.details.DetailsFragment
 import com.example.simpleandroidapp.features.login.LoginFragment
 
+/**
+ * Main activity for the app, responsible for navigation.
+ */
 class MainActivity : AppCompatActivity() {
-    val USERNAME_KEY = "username"
+    companion object {
+        const val USERNAME_KEY = "username"
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,4 +51,5 @@ class MainActivity : AppCompatActivity() {
             replace<LoginFragment>(R.id.fragment_main_layout)
         }
     }
+
 }

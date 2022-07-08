@@ -13,6 +13,9 @@ import com.example.simpleandroidapp.R
 import com.example.simpleandroidapp.databinding.FragmentLoginBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
+/**
+ * Fragment responsible for the login of the app
+ */
 class LoginFragment: Fragment() {
     private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!

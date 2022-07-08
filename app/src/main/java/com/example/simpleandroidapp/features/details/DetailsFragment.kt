@@ -13,6 +13,9 @@ import com.example.simpleandroidapp.R
 import com.example.simpleandroidapp.databinding.FragmentDetailsBinding
 import com.example.simpleandroidapp.models.GiphyData
 
+/**
+ * Fragment responsible for showing the main page of the app, the details screen!
+ */
 class DetailsFragment: Fragment() {
     private var _binding: FragmentDetailsBinding? = null
     private val binding get() = _binding!!
@@ -51,7 +54,7 @@ class DetailsFragment: Fragment() {
     }
 
     private fun bindUsernameData() {
-        val username = args?.get((activity as MainActivity).USERNAME_KEY)
+        val username = args?.get(MainActivity.USERNAME_KEY)
         val welcomeText = getString(R.string.welcome, username)
         binding.welcomeText.text = welcomeText
     }

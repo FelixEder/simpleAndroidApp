@@ -8,6 +8,9 @@ import com.example.simpleandroidapp.api.GiphyDataSource
 import com.example.simpleandroidapp.models.GiphyData
 import kotlinx.coroutines.launch
 
+/**
+ * ViewModel for the details view, responsible for calling for network requests.
+ */
 class DetailsViewModel : ViewModel() {
     private val giphyDataSource = GiphyDataSource()
 

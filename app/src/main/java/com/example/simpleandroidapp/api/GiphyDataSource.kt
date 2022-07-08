@@ -11,11 +11,13 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import java.io.IOException
 
+/**
+ * Class responsible for setting up the HTTP client and perform network requests
+ */
 class GiphyDataSource {
-    private lateinit var apiService: GiphyApi
+    private val apiService: GiphyApi
 
-    private fun setupRetrofit() {
-
+    init {
         val logger = HttpLoggingInterceptor()
         logger.setLevel(HttpLoggingInterceptor.Level.BODY)
 
@@ -42,8 +44,6 @@ class GiphyDataSource {
     )
 
     private suspend fun requestTrendingGifs(): Result<GiphyData> {
-        setupRetrofit()
-
         val response = apiService.getTrendingGif(
             apiKey = Constants.GIPHY_API_KEY,
             limit = 1,

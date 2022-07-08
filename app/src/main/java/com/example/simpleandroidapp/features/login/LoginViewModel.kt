@@ -6,6 +6,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 
+/**
+ * ViewModel for the login of the app, responsible for the login logic.
+ */
 class LoginViewModel : ViewModel() {
 
     private val _loginValidation = MutableLiveData<ViewState>()

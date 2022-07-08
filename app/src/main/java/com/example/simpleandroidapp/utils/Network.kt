@@ -3,6 +3,9 @@ package com.example.simpleandroidapp.utils
 import java.io.IOException
 import java.lang.Exception
 
+/**
+ * Helper function for doing asynchronous network calls.
+ */
 suspend fun <T: Any> apiCall(call: suspend () -> Result<T>, errorMessage: String): Result<T> {
     return try {
         call()
