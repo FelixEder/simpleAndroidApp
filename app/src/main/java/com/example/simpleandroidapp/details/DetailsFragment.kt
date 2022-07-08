@@ -16,7 +16,6 @@ class DetailsFragment: Fragment() {
     private val model: DetailsViewModel by viewModels()
     private var args: Bundle? = null
 
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
