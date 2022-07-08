@@ -9,6 +9,9 @@ import androidx.fragment.app.viewModels
 import com.example.simpleandroidapp.MainActivity
 import com.example.simpleandroidapp.R
 import com.example.simpleandroidapp.databinding.FragmentDetailsBinding
+import com.example.simpleandroidapp.utils.Constants
+import com.giphy.sdk.ui.Giphy
+import com.giphy.sdk.ui.pagination.GPHContent
 
 class DetailsFragment: Fragment() {
     private var _binding: FragmentDetailsBinding? = null
@@ -45,6 +48,10 @@ class DetailsFragment: Fragment() {
         val username = args?.get((activity as MainActivity).USERNAME_KEY)
         val welcomeText = getString(R.string.welcome, username)
         binding.welcomeText.text = welcomeText
+    }
+
+    private fun initGiphy() {
+
     }
 
     private fun setupObservers() {
