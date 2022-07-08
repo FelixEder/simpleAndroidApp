@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
-import com.example.simpleandroidapp.details.DetailsFragment
-import com.example.simpleandroidapp.login.LoginFragment
+import com.example.simpleandroidapp.features.details.DetailsFragment
+import com.example.simpleandroidapp.features.login.LoginFragment
 
 class MainActivity : AppCompatActivity() {
     val USERNAME_KEY = "username"

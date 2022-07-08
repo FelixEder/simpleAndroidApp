@@ -1,4 +1,4 @@
-package com.example.simpleandroidapp.login
+package com.example.simpleandroidapp.features.login
 
 import android.os.Bundle
 import android.util.Log

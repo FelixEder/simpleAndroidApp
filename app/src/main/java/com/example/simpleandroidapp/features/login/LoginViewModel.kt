@@ -1,4 +1,4 @@
-package com.example.simpleandroidapp.login
+package com.example.simpleandroidapp.features.login
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
