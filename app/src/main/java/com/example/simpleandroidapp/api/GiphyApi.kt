@@ -7,9 +7,11 @@ import retrofit2.http.Query
 
 interface GiphyApi {
 
-    @GET("/v1/gifs/trending/api_key")
+    @GET("v1/gifs/trending")
     suspend fun getTrendingGif(
-        @Query("api_key") apiKey: String
+        @Query("api_key") apiKey: String,
+        @Query("limit") limit: Int,
+        @Query("rating") rating: String
     ): Response<GiphyData>
 
 }

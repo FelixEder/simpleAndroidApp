@@ -17,6 +17,7 @@
     <string name="welcome">Welcome, %s!</string>
     <string name="gif_meta">"%s" by %s</string>
     <string name="logout">Logout</string>
-        <string name="random_gif">Random gif</string>
+    <string name="random_gif">Random gif</string>
+    <string name="gif_error">Error loading gif, please try again later</string>
 
 </resources>
