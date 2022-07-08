@@ -1,9 +1,9 @@
 package com.example.simpleandroidapp.models
 
 
+import androidx.annotation.Keep
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
-import androidx.annotation.Keep
 
 @Keep
 @JsonClass(generateAdapter = true)

@@ -16,7 +16,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 /**
  * Fragment responsible for the login of the app
  */
-class LoginFragment: Fragment() {
+class LoginFragment : Fragment() {
     private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!
     private val model: LoginViewModel by viewModels()
@@ -58,11 +58,11 @@ class LoginFragment: Fragment() {
         model.loginValidation.observe(viewLifecycleOwner) { viewState ->
             when (viewState) {
                 is LoginViewModel.ViewState.NoUsername -> {
-                    Log.e("Error","No username entered")
+                    Log.e("Error", "No username entered")
                     createDialog(R.string.error_no_username)
                 }
                 is LoginViewModel.ViewState.WrongPassword -> {
-                    Log.e("Error","Wrong password entered")
+                    Log.e("Error", "Wrong password entered")
                     createDialog(R.string.error_wrong_password)
                 }
                 is LoginViewModel.ViewState.SuccessfulLogin -> {

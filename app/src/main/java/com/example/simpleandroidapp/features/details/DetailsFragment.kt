@@ -16,7 +16,7 @@ import com.example.simpleandroidapp.models.GiphyData
 /**
  * Fragment responsible for showing the main page of the app, the details screen!
  */
-class DetailsFragment: Fragment() {
+class DetailsFragment : Fragment() {
     private var _binding: FragmentDetailsBinding? = null
     private val binding get() = _binding!!
     private val model: DetailsViewModel by viewModels()

@@ -41,10 +41,11 @@ class DetailsViewModel : ViewModel() {
     }
 
     sealed class ViewState {
-        object Loading: ViewState()
+        object Loading : ViewState()
         data class LoadingSuccessful(
             val giphyData: GiphyData?
         ) : ViewState()
+
         data class LoadingFailure(
             val errorMessage: String? = null
         ) : ViewState()

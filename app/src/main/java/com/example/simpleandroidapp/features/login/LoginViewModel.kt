@@ -18,8 +18,7 @@ class LoginViewModel : ViewModel() {
         viewModelScope.launch {
             if (username.isEmpty()) {
                 _loginValidation.value = ViewState.NoUsername
-            }
-            else if (password == "password") {
+            } else if (password == "password") {
                 _loginValidation.value = ViewState.SuccessfulLogin(
                     username = username
                 )
@@ -30,10 +29,10 @@ class LoginViewModel : ViewModel() {
     }
 
     sealed class ViewState {
-        object NoUsername: ViewState()
-        object WrongPassword: ViewState()
+        object NoUsername : ViewState()
+        object WrongPassword : ViewState()
         data class SuccessfulLogin(
             val username: String
-        ): ViewState()
+        ) : ViewState()
     }
 }
