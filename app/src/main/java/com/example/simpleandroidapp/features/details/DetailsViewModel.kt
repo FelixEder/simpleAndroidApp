@@ -18,7 +18,7 @@ class DetailsViewModel : ViewModel() {
         _gifFetching.value = ViewState.Loading
         viewModelScope.launch {
             try {
-                val giphyDataResponse = giphyDataSource.requestTrendingGifs()
+                val giphyDataResponse = giphyDataSource.getTrendingGifs()
 
                 if (giphyDataResponse.isSuccess) {
                     _gifFetching.value = ViewState.LoadingSuccessful(
